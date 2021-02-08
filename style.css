@@ -1,0 +1,126 @@
+
+*{font-family: 'Verdana';
+  font-size: 14px;}
+
+body{background-color: #15202b;}
+
+.contenir{
+  width: 598px;
+  border: 1px solid #657786;
+  margin: 10px auto;
+  border-top: none;
+  border-bottom: none;
+}
+
+.userName{width: 100%;}
+
+.logo img{display: block;margin: 0px auto;}
+
+.userName input{
+  height: 30px; 
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+  background-color: #15202b;
+  color: white;
+}
+
+.tweetArea textarea{
+  height: 70px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding-top: 10px;
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+  background-color: #15202b;
+  color: white;
+}
+.button{width: 80%;margin: 0 auto;}
+
+.btn{
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 999px;
+  color:#F5F8FA;
+  background-color:#256994;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover{background-color: #1DA1F2;}
+
+.new-btn0, .new-btn1{
+  font-size: 11px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: lighter;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.new-btn0{margin-right: 60px;}
+
+.new-btn1{margin-left: 60px;}
+
+.new-btn0:hover, .reLikeBtn:hover{
+  background-color: rgb(224, 36, 94);
+  color: white;
+}
+
+.new-btn1:hover{background-color:#1DA1F2;color: white;}
+
+#newFeeds{width: 100%;font-size: 20px;text-align: center;}
+
+.new-div p, .reDiv p {
+  width: 80%;
+  margin: 5px auto;
+  color: #E1E8ED;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.new-div p:last-of-type, .reDiv p:last-of-type{margin-bottom: 20px;}
+
+.new-user{color: #F5F8FA;}
+
+hr{
+  height:1px;
+  width: 81%;
+  border:none;
+  color:#657786;
+  background-color:#657786;
+  margin-top: 15px;
+}
+
+.reLikeBtn, .new-btn0, .new-btn1{
+  border-radius: 999px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.reLikeBtn{
+  font-size: 11px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.new-img0{width: 20px;}
+
+.reYou{
+  font-size: 10px;
+  color: #657786;
+  border: none;
+  outline: none;
+}
