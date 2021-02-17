@@ -63,7 +63,7 @@ let t = {
         newUser.setAttribute('style', 'color:#1DA1F2;');
         newTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
         likeBtn.setAttribute('style', 'background-color:rgb(224, 36, 94);color:white;');
-        likeBtn.innerText = 'LIKED';
+//         likeBtn.innerText = 'LIKED';
     }
     
     let reNum = -1;
@@ -99,7 +99,7 @@ let t = {
                 reUser.setAttribute('style', 'color:#1DA1F2;');
                 reTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
                 reLikeBtn.setAttribute('style', 'background-color:rgb(224, 36, 94);color:white;');
-                reLikeBtn.innerText = 'LIKED';
+//                 reLikeBtn.innerText = 'LIKED';
               
             }
         }
