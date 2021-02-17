@@ -114,6 +114,7 @@ hr{
   cursor: pointer;
   border: none;
   margin-bottom: 5px;
+  outline: none;
 }
 
 .new-img0{width: 20px;}
