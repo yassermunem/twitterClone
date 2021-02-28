@@ -47,7 +47,7 @@ let   newDiv    = document.createElement('div'),
       reBtn.innerText = 'RE';
       newUser.textContent = '@' + userInfo;
       newTweet.textContent = tweetContent;
-      document.getElementById('userInfo').value = '';
+//       document.getElementById('userInfo').value = '';
       document.getElementById('tweetContent').value = '';
  
     //   console.log(tweets);
