@@ -88,6 +88,7 @@ let t = {
             reDiv.appendChild(reUser);
             reDiv.appendChild(reTweet);
             reDiv.appendChild(reLikeBtn);
+            reDiv.appendChild(reReBtn);
             reDiv.appendChild(reHr);
             reDiv.classList.add('reDiv');
             reLikeBtn.classList.add('like');
