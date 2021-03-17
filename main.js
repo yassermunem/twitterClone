@@ -43,8 +43,8 @@ let   newDiv    = document.createElement('div'),
       newDiv.appendChild(reBtn);
       newDiv.appendChild(newHr);
 
-      likeBtn.innerText ='LIKE';
-      reBtn.innerText = 'RE';
+      likeBtn.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
+      reBtn.innerHTML = `<i class="fas fa-retweet fa-lg"></i>`;
 //       newUser.textContent = '@' + userInfo;
 //       newTweet.textContent = tweetContent;
 //       document.getElementById('userInfo').value = '';
@@ -65,7 +65,7 @@ let t = {
     likeBtn.onclick = () => {
         newUser.setAttribute('style', 'color:#1DA1F2;');
         newTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
-        likeBtn.setAttribute('style', 'background-color:rgb(224, 36, 94);color:white;');
+        likeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
 //         likeBtn.innerText = 'LIKED';
     }
     
@@ -97,8 +97,8 @@ let t = {
             reYou.setAttribute('style', 'color: #657786;')
 
             reYou.textContent = '@' + tweets[tweetNum].user + ' Retweeted';
-            reLikeBtn.innerText = 'LIKE';
-            reReBtn.innerText = 'RE';
+            reLikeBtn.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
+            reReBtn.innerHTML = `<i class="fas fa-retweet fa-lg"></i>`;
             reUser.textContent = newUser.textContent;
             reTweet.textContent = newTweet.textContent;
         
@@ -107,7 +107,7 @@ let t = {
             reLikeBtn.onclick = () => {
                 reUser.setAttribute('style', 'color:#1DA1F2;');
                 reTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
-                reLikeBtn.setAttribute('style', 'background-color:rgb(224, 36, 94);color:white;');
+                reLikeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
 //                 reLikeBtn.innerText = 'LIKED';
               
             }
