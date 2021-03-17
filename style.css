@@ -70,13 +70,13 @@ body{background: #EEF2F7;}
 .btn:hover{background-color: #1DA1F2;}
 
 .like, .retweet{
-  font-size: 11px;
   outline: none;
   border: none;
   cursor: pointer;
   font-weight: bolder;
   margin-bottom: 5px;
-  background-color: white;
+  background-color: #15202b;
+  color: #F5F8FA;
   border-radius: 999px;
   font-family: sans-serif;
 }
@@ -86,11 +86,10 @@ body{background: #EEF2F7;}
 .retweet{margin-left: 60px;}
 
 .like:hover{
-  background-color: rgb(224, 36, 94);
-  color: white;
+  color: rgb(224, 36, 94);
 }
 
-.retweet:hover{background-color:#1DA1F2;color: white;}
+.retweet:hover{color:#1DA1F2;}
 
 #newFeeds{width: 100%;font-size: 20px;text-align: center;}
 
