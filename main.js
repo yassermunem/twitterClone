@@ -97,6 +97,7 @@ let t = {
 
             reYou.textContent = '@' + tweets[tweetNum].user + ' Retweeted';
             reLikeBtn.innerText = 'LIKE';
+            reReBtn.innerText = 'RE';
             reUser.textContent = newUser.textContent;
             reTweet.textContent = newTweet.textContent;
         
