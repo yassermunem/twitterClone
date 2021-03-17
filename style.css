@@ -69,26 +69,28 @@ body{background: #EEF2F7;}
 
 .btn:hover{background-color: #1DA1F2;}
 
-.new-btn0, .new-btn1{
+.like, .retweet{
   font-size: 11px;
   outline: none;
   border: none;
   cursor: pointer;
-  font-weight: lighter;
+  font-weight: bolder;
   margin-bottom: 5px;
   background-color: white;
+  border-radius: 999px;
+  font-family: sans-serif;
 }
 
-.new-btn0{margin-right: 60px;}
+.like{margin-right: 60px;}
 
-.new-btn1{margin-left: 60px;}
+.retweet{margin-left: 60px;}
 
-.new-btn0:hover, .reLikeBtn:hover{
+.like:hover{
   background-color: rgb(224, 36, 94);
   color: white;
 }
 
-.new-btn1:hover{background-color:#1DA1F2;color: white;}
+.retweet:hover{background-color:#1DA1F2;color: white;}
 
 #newFeeds{width: 100%;font-size: 20px;text-align: center;}
 
@@ -114,19 +116,6 @@ hr{
   margin-top: 15px;
 }
 
-.reLikeBtn, .new-btn0, .new-btn1{
-  border-radius: 999px;
-  font-family: sans-serif;
-  font-weight: bolder;
-}
-
-.reLikeBtn{
-  font-size: 11px;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 5px;
-  outline: none;
-}
 
 .new-img0{width: 20px;}
 
