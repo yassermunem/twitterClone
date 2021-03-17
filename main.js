@@ -45,8 +45,8 @@ let   newDiv    = document.createElement('div'),
 
       likeBtn.innerText ='LIKE';
       reBtn.innerText = 'RE';
-      newUser.textContent = '@' + userInfo;
-      newTweet.textContent = tweetContent;
+//       newUser.textContent = '@' + userInfo;
+//       newTweet.textContent = tweetContent;
 //       document.getElementById('userInfo').value = '';
       document.getElementById('tweetContent').value = '';
  
@@ -57,6 +57,9 @@ let t = {
 };
       tweets.push(t);
       console.log(tweets);
+      
+      newUser.textContent = '@' + tweets[tweetNum].user;
+      newTweet.textContent = tweets[tweetNum].tw;
 
 
     likeBtn.onclick = () => {
@@ -90,7 +93,7 @@ let t = {
             reYou.classList.add('reYou');
             reYou.setAttribute('style', 'color: #657786;')
 
-            reYou.textContent = 'You Retweeted'
+            reYou.textContent = '@' + tweets[tweetNum].user + ' Retweeted';
             reLikeBtn.innerText = 'LIKE';
             reUser.textContent = newUser.textContent;
             reTweet.textContent = newTweet.textContent;
