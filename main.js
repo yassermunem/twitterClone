@@ -26,8 +26,8 @@ let   newDiv    = document.createElement('div'),
       newHr     = document.createElement('hr');
 
       newDiv.classList.add('new-div');
-      likeBtn.classList.add('new-btn0');
-      reBtn.classList.add('new-btn1');
+      likeBtn.classList.add('like');
+      reBtn.classList.add('retweet');
       newUser.classList.add('new-user');
       newTweet.classList.add('new-tweet');
 
@@ -77,6 +77,7 @@ let t = {
             reUser    = document.createElement('p'),
             reTweet   = document.createElement('p'),
             reLikeBtn = document.createElement('button'),
+            reReBtn   = document.createElement('button'),
             reHr      = document.createElement('hr');
 
             reNum++;
@@ -89,14 +90,17 @@ let t = {
             reDiv.appendChild(reLikeBtn);
             reDiv.appendChild(reHr);
             reDiv.classList.add('reDiv');
-            reLikeBtn.classList.add('reLikeBtn');
+            reLikeBtn.classList.add('like');
             reYou.classList.add('reYou');
+            reReBtn.classList.add('retweet');
             reYou.setAttribute('style', 'color: #657786;')
 
             reYou.textContent = '@' + tweets[tweetNum].user + ' Retweeted';
             reLikeBtn.innerText = 'LIKE';
             reUser.textContent = newUser.textContent;
             reTweet.textContent = newTweet.textContent;
+        
+            reReBtn.onclick = reBtn.onclick;
 
             reLikeBtn.onclick = () => {
                 reUser.setAttribute('style', 'color:#1DA1F2;');
