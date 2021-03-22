@@ -7,9 +7,9 @@ let tweetBtn = document.querySelector('.btn'),
     userNum  = -1,
     tweets   = [];
     console.log(tweets);
-    tweetBtn.addEventListener('click',CreateTweet);
+    tweetBtn.addEventListener('click',createTweet);
 
-function CreateTweet() {
+function createTweet() {
 
 let   userInfo     = document.getElementById('userInfo').value,
       tweetContent = document.getElementById('tweetContent').value;
