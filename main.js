@@ -32,7 +32,7 @@ let   newDiv    = document.createElement('div'),
       newTweet.classList.add('new-tweet');
 
       tweetNum++;
-      UserNum++;
+      userNum++;
 
       newTweet.setAttribute('id', `tw-${tweetNum}`);
       newUser.setAttribute('id', `us-${userNum}`); 
