@@ -2,9 +2,9 @@
 
 
 let tweetBtn = document.querySelector('.btn'),
-    FeedDivs = document.getElementById('newFeeds'),
+    feedDivs = document.getElementById('newFeeds'),
     tweetNum = -1,
-    UserNum  = -1,
+    userNum  = -1,
     tweets   = [];
     console.log(tweets);
     tweetBtn.addEventListener('click',CreateTweet);
@@ -35,8 +35,8 @@ let   newDiv    = document.createElement('div'),
       UserNum++;
 
       newTweet.setAttribute('id', `tw-${tweetNum}`);
-      newUser.setAttribute('id', `us-${UserNum}`); 
-      FeedDivs.insertBefore(newDiv, FeedDivs.firstChild);
+      newUser.setAttribute('id', `us-${userNum}`); 
+      feedDivs.insertBefore(newDiv, feedDivs.firstChild);
       newDiv.appendChild(newUser);
       newDiv.appendChild(newTweet);
       newDiv.appendChild(likeBtn);
@@ -66,7 +66,7 @@ let t = {
         newUser.setAttribute('style', 'color:#1DA1F2;');
         newTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
         likeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
-//         likeBtn.innerText = 'LIKED';
+//      likeBtn.innerText = 'LIKED';
     }
     
     let reNum = -1;
@@ -82,7 +82,7 @@ let t = {
 
             reNum++;
 
-            FeedDivs.insertBefore(reDiv, FeedDivs.firstChild);
+            feedDivs.insertBefore(reDiv, feedDivs.firstChild);
             reTweet.setAttribute('id', `reTw-${reNum}`);
             reDiv.appendChild(reYou);
             reDiv.appendChild(reUser);
@@ -108,7 +108,8 @@ let t = {
                 reUser.setAttribute('style', 'color:#1DA1F2;');
                 reTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
                 reLikeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
-//                 reLikeBtn.innerText = 'LIKED';
+//              reLikeBtn.innerText = 'LIKED';
+
               
             }
         }
