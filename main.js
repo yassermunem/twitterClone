@@ -1,29 +1,30 @@
 
 
 
-let tweetBtn = document.querySelector('.btn'),
-    feedDivs = document.getElementById('newFeeds'),
-    tweetNum = -1,
-    userNum  = -1,
-    tweets   = [];
-    console.log(tweets);
-    tweetBtn.addEventListener('click',createTweet);
+let tweetBtn = document.querySelector('.btn');
+let feedDivs = document.getElementById('newFeeds');
+let tweetNum = -1;
+let userNum  = -1;
+let tweets   = [];
+
+     console.log(tweets);
+     tweetBtn.addEventListener('click',createTweet);
 
 function createTweet() {
 
-let   userInfo     = document.getElementById('userInfo').value,
-      tweetContent = document.getElementById('tweetContent').value;
+let   userInfo     = document.getElementById('userInfo').value;
+let   tweetContent = document.getElementById('tweetContent').value;
 
 if(userInfo == ''){alert('Please enter your username');}
 else if(tweetContent == ''){alert('Please enter your tweet')}     
 else{
 
-let   newDiv    = document.createElement('div'),
-      newUser   = document.createElement('p'),
-      newTweet  = document.createElement('p'),
-      likeBtn   = document.createElement('button'),
-      reBtn     = document.createElement('button'),
-      newHr     = document.createElement('hr');
+let   newDiv    = document.createElement('div');
+let   newUser   = document.createElement('p');
+let   newTweet  = document.createElement('p');
+let   likeBtn   = document.createElement('button');
+let   reBtn     = document.createElement('button');
+let   newHr     = document.createElement('hr');
 
       newDiv.classList.add('new-div');
       likeBtn.classList.add('like');
