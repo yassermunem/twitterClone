@@ -46,12 +46,9 @@ let   newHr     = document.createElement('hr');
 
       likeBtn.innerHTML = `<i class="fas fa-heart fa-lg"></i>`;
       reBtn.innerHTML = `<i class="fas fa-retweet fa-lg"></i>`;
-//       newUser.textContent = '@' + userInfo;
-//       newTweet.textContent = tweetContent;
-//       document.getElementById('userInfo').value = '';
+     
       document.getElementById('tweetContent').value = '';
- 
-    //   console.log(tweets);
+
 let t = {
     user: userInfo,
     tw: tweetContent
@@ -67,19 +64,18 @@ let t = {
         newUser.setAttribute('style', 'color:#1DA1F2;');
         newTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
         likeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
-//      likeBtn.innerText = 'LIKED';
     }
     
     let reNum = -1;
     reBtn.onclick = () => {
 
-        let reDiv     = document.createElement('div'),
-            reYou     = document.createElement('p'),
-            reUser    = document.createElement('p'),
-            reTweet   = document.createElement('p'),
-            reLikeBtn = document.createElement('button'),
-            reReBtn   = document.createElement('button'),
-            reHr      = document.createElement('hr');
+        let reDiv     = document.createElement('div');
+        let reYou     = document.createElement('p');
+        let reUser    = document.createElement('p');
+        let reTweet   = document.createElement('p');
+        let reLikeBtn = document.createElement('button');
+        let reReBtn   = document.createElement('button');
+        let reHr      = document.createElement('hr');
 
             reNum++;
 
@@ -109,9 +105,8 @@ let t = {
                 reUser.setAttribute('style', 'color:#1DA1F2;');
                 reTweet.setAttribute('style', 'color:rgb(224, 36, 94);'); 
                 reLikeBtn.setAttribute('style', 'color:rgb(224, 36, 94);');
-//              reLikeBtn.innerText = 'LIKED';
 
-              
+           
             }
         }
 }
