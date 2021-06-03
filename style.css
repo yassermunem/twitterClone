@@ -67,6 +67,7 @@ body{background: #EEF2F7;}
   outline: none;
   cursor: pointer;
   max-width: 100%;
+  transition: background 0.5s;
 }
 
 .btn:hover{background-color: #1DA1F2;}
